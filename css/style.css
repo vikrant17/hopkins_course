@@ -222,6 +222,8 @@ body {
 	box-shadow: 0 0 50px #3F0C1F;
 	border: 2px solid #3F0C1F;
 	}
+
+
 }
 
 
@@ -231,6 +233,11 @@ body {
 		height: 250px;
 		margin: 0 auto 15px;
 	}
+		.panel-footer section {
+	text-align: center;
+
+	;
+}
 }
 
 #phone-num {
@@ -266,3 +273,39 @@ body {
 		height: 180px;
 	}
 }
+
+/**Footer **/
+.panel-footer {
+	 margin-top: 30px;
+	 background: #222;
+	 border-top:0;
+	 padding-top: 35px;
+	 padding-bottom: 35px;
+}
+
+.panel-footer div.row {
+	margin-bottom: 30px;
+}
+
+#address, #hours {
+	line-height: 2em;
+}
+
+#address p {
+	font-size: .8em;
+	color: green;
+}
+
+#address>span , #hours>span {
+	font-size: 1.5em;
+
+}
+
+#testimonials {
+	font-style: italic;
+	color: wheat;
+
+#testimonials p:nth-child(2) {
+	margin-top: 20px;
+}
+
