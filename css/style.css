@@ -233,16 +233,54 @@ body {
 		height: 250px;
 		margin: 0 auto 15px;
 	}
-		.panel-footer section {
+	.panel-footer section {
 	text-align: center;
+	}
+	
+	.menu-item-tile {
+	text-align: center;
+	}
 
-	;
-}
+	.menu-item-photo {
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+	
+	.menu-item-description {
+		
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		margin-top: -5px !important;
+	}
+	
+	.menu-item-title {
+		margin-top: -10px !important;
+	}
+	
+	.row {
+	
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.menu-item-tile {
+		border-bottom:  1px solid;
+		padding: 0;
+		margin-top: 30px;
+	}
+	.menu-item-tile:nth-last-child(1){
+		border: none;
+	}
+
+	#special-category-title + div {
+		margin-bottom: 10px !important;
+	}
 }
 
 #phone-num {
 	text-align: center;
-	
 	margin-top: 30px;
 }
 
@@ -304,8 +342,94 @@ body {
 #testimonials {
 	font-style: italic;
 	color: wheat;
-
+}
 #testimonials p:nth-child(2) {
 	margin-top: 20px;
+}
+
+
+/** Menu Categories **/
+.category-tile {
+	position: relative;
+	border:1px solid white;
+	height: 200px;width: 200px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	color: white;
+	opacity: 0.7;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#menu-categories-title + div {
+	margin-bottom: 50px;
+	font-size: 0.9em;
+}
+
+#menu-categories-title {
+	margin-top: 30px;
+	font-size: 2.5em;
+}
+
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #ccc
+}
+
+/*Special Category*/
+
+#special-category-title {
+	margin-top: 30px;
+	font-size: 2.5em;
+}
+
+#special-category-title + div {
+	margin-bottom: 50px;
+	font-size: 0.9em;
+}
+
+.menu-item-tile {
+	padding-right: 20px;
+}
+
+.menu-item-photo {
+	max-width: 250px;
+	box-shadow: 1px 2px 5px #3F0C1F;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: olive;
+	padding: 0px 10px;
+	border-bottom-right-radius: 5px;
+}
+
+.menu-item-description {
+	font-size: 0.8em;
+	margin-top: 0;
+}
+
+.menu-item-description p{
+	margin-top: -5px;
+	font-style: italic;
+}
+
+.menu-item-title {
+	margin-top: -5px;
+	padding-top: 0; 
 }
 
