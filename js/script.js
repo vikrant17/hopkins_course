@@ -20,7 +20,7 @@ $(function() {
         $('#main-content').prepend(template);
       });
 
-      $.getJSON('http://davids-restaurant.herokuapp.com/categories.json', function(data){
+      $.getJSON('https://davids-restaurant.herokuapp.com/categories.json', function(data){
       
         $.get('../category-snippet.html', function(template) {
         
@@ -39,7 +39,7 @@ $(function() {
         $('#main-content').prepend(template);
       });
 
-      $.getJSON('http://davids-restaurant.herokuapp.com/categories.json', function(data){
+      $.getJSON('https://davids-restaurant.herokuapp.com/categories.json', function(data){
       
         $.get('../category-snippet.html', function(template) {
          
@@ -54,7 +54,7 @@ $(function() {
 
 	$(document).on('click', '.category-tile',function(event) {
 		var el_id = this.id;
-		$.getJSON('http://davids-restaurant.herokuapp.com/menu_items.json?category='+el_id, function(data) {
+		$.getJSON('https://davids-restaurant.herokuapp.com/menu_items.json?category='+el_id, function(data) {
 			$('#main-content').html("<section class='row' id='category-menus'></section>");	
 			$.get("../single-category-title-snippet.html", function(template) {
 				var rendered = Mustache.render(template, {title_name:data.category.name, title_desc:data.category.special_instructions})
